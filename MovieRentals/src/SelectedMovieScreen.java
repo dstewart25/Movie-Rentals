@@ -1,19 +1,13 @@
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import java.awt.Color;
-import javax.swing.JTextPane;
-import java.awt.Font;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
 
 public class SelectedMovieScreen {
 
 	private JFrame frame;
 	private static Movie movie;
 	Color txtBGColor = new Color(238, 238, 238);
+	private MovieBrowseScreen movieBrowseScreen = new MovieBrowseScreen();
 
 	/**
 	 * Launch the application.
@@ -34,8 +28,8 @@ public class SelectedMovieScreen {
 	/**
 	 * Create the application.
 	 */
-	public SelectedMovieScreen(Movie importedMovie) {
-		movie = importedMovie;
+	public SelectedMovieScreen(Movie selectedMovie) {
+		movie = selectedMovie;
 		initialize();
 		frame.setVisible(true);
 	}
@@ -77,18 +71,56 @@ public class SelectedMovieScreen {
 		frame.getContentPane().add(txtpnDescriptionOfMovie);
 		
 		JButton btnAddToCart = new JButton("Add to Cart");
+		btnAddToCart.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(
+					null,
+					movie.getName() + " was added to your cart",
+					"Movie added to cart",
+					JOptionPane.PLAIN_MESSAGE
+				);
+				Global.cart.addToCart(movie);
+			}
+		});
 		btnAddToCart.setFont(new Font("Lucida Grande", Font.PLAIN, 10));
 		btnAddToCart.setBounds(327, 67, 117, 29);
 		frame.getContentPane().add(btnAddToCart);
 		
 		JButton btnAddToWishlist = new JButton("Add to Wishlist");
+		btnAddToWishlist.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(
+					null,
+					movie.getName() + " was added to your wishlist",
+					"Movie added to wishlist",
+					JOptionPane.PLAIN_MESSAGE
+				);
+				Global.wishlist.addToWishlist(movie);
+			}
+		});
 		btnAddToWishlist.setFont(new Font("Lucida Grande", Font.PLAIN, 10));
 		btnAddToWishlist.setBounds(327, 96, 117, 29);
 		frame.getContentPane().add(btnAddToWishlist);
 		
 		JButton btnViewCart = new JButton("View Cart");
+		btnViewCart.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				CartScreen cartScreen = new CartScreen();
+				frame.dispose();
+			}
+		});
 		btnViewCart.setFont(new Font("Lucida Grande", Font.PLAIN, 10));
 		btnViewCart.setBounds(327, 124, 117, 29);
 		frame.getContentPane().add(btnViewCart);
+		
+		JButton btnViewWishlist = new JButton("View Wishlist");
+		btnViewWishlist.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				WishlistScreen wishlistScreen = new WishlistScreen();
+			}
+		});
+		btnViewWishlist.setFont(new Font("Lucida Grande", Font.PLAIN, 10));
+		btnViewWishlist.setBounds(327, 152, 117, 29);
+		frame.getContentPane().add(btnViewWishlist);
 	}
 }

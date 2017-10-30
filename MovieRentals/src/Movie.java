@@ -8,28 +8,15 @@ import javax.swing.ImageIcon;
 public class Movie {
 	// Movie information delcarations
 	private String nameOfMovie;
-	private String ratingOfMovie;
-	private String directorOfMovie;
-	private String[] actorsInMovie;
 	private String moviePosterURL;
 	private ImageIcon moviePoster;
+	private double priceOfMovie;
 	
 	public String getName() {
 		return nameOfMovie;
 	}
 	
-	public String getRating() {
-		return ratingOfMovie;
-	}
-	
-	public String getDirector() {
-		return directorOfMovie;
-	}
-	
-	public String[] getActors() {
-		return actorsInMovie;
-	}
-	
+	// importing poster image for the movie
 	public ImageIcon getImage() {
 		BufferedImage img = new BufferedImage(130, 170, BufferedImage.TYPE_4BYTE_ABGR);
 		try {
@@ -44,11 +31,13 @@ public class Movie {
 		return moviePoster;
 	}
 	
-	public Movie(String name, String rating, String director, String[] actors, String posterURL) {
+	public double getPrice() {
+		return priceOfMovie;
+	}
+	
+	public Movie(String name, String posterURL, double price) {
 		nameOfMovie = name;
-		ratingOfMovie = rating;
-		directorOfMovie = director;
-		actorsInMovie = actors;
 		moviePosterURL = posterURL;
+		priceOfMovie = price;
 	}
 }

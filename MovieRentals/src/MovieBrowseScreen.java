@@ -1,19 +1,13 @@
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import javax.swing.JTextField;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
 
 public class MovieBrowseScreen {
 	
 	// Movie placeholders
-	private static String[] nameOfMovies = {"Predator", "RoboCob", "IT", "Interstellar"};
-	private static String ratingOfMovies = "R";
-	private static String[] directorOfMovies = {"John McTiernan", "Paul Verhoeven", "Andrés Muschietti", "Christopher Nolan"};
-	private static String[] actorsOfMovies = {"Kanye West", "Matthew McConnahay", "Taylor Swift"};
+	private static String[] nameOfMovies = {"Predator", "RoboCop", "IT", "Interstellar"};
 	private static String[] moviePosterURL = {"MoviePosters/predator.jpg", "MoviePosters/robocop.jpg", "MoviePosters/it.jpg", "MoviePosters/interstellar.jpg"};
+	private static double[] priceOfMovies = {9.99, 10.25, 12.90, 3.99};
 	
 	private static Movie movie1;
 	private static Movie movie2;
@@ -45,14 +39,23 @@ public class MovieBrowseScreen {
 	public MovieBrowseScreen() {
 		importMovies();
 		initialize();
+		frame.setVisible(true);
+	}
+	
+	public void addMovieToCart(Movie movie) {
+		Global.cart.addToCart(movie);
+	}
+	
+	public void addMovieToWishlist(Movie movie) {
+		Global.wishlist.addToWishlist(movie);
 	}
 	
 	// Imports movie information from database(eventually)
 	public void importMovies() {
-		movie1 = new Movie(nameOfMovies[0], ratingOfMovies, directorOfMovies[0], actorsOfMovies, moviePosterURL[0]);
-		movie2 = new Movie(nameOfMovies[1], ratingOfMovies, directorOfMovies[1], actorsOfMovies, moviePosterURL[1]);
-		movie3 = new Movie(nameOfMovies[2], ratingOfMovies, directorOfMovies[2], actorsOfMovies, moviePosterURL[2]);
-		movie4 = new Movie(nameOfMovies[3], ratingOfMovies, directorOfMovies[3], actorsOfMovies, moviePosterURL[3]);
+		movie1 = new Movie(nameOfMovies[0], moviePosterURL[0], priceOfMovies[0]);
+		movie2 = new Movie(nameOfMovies[1], moviePosterURL[1], priceOfMovies[1]);
+		movie3 = new Movie(nameOfMovies[2], moviePosterURL[2], priceOfMovies[2]);
+		movie4 = new Movie(nameOfMovies[3], moviePosterURL[3], priceOfMovies[3]);
 	}
 
 	/**
@@ -61,7 +64,7 @@ public class MovieBrowseScreen {
 	private void initialize() {
 		
 		frame = new JFrame();
-		frame.setBounds(100, 100, 650, 500);
+		frame.setBounds(100, 100, 650, 239);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -71,7 +74,7 @@ public class MovieBrowseScreen {
 				SelectedMovieScreen selMovie = new SelectedMovieScreen(movie1);
 			}
 		});
-		btnMovie1.setBounds(107, 102, 100, 146);
+		btnMovie1.setBounds(107, 47, 100, 146);
 		frame.getContentPane().add(btnMovie1);
 		
 		JButton btnMovie2 = new JButton(movie2.getName());
@@ -80,7 +83,7 @@ public class MovieBrowseScreen {
 				SelectedMovieScreen selMovie = new SelectedMovieScreen(movie2);
 			}
 		});
-		btnMovie2.setBounds(219, 102, 100, 146);
+		btnMovie2.setBounds(219, 47, 100, 146);
 		frame.getContentPane().add(btnMovie2);
 		
 		JButton btnMovie3 = new JButton(movie3.getName());
@@ -89,7 +92,7 @@ public class MovieBrowseScreen {
 				SelectedMovieScreen selMovie = new SelectedMovieScreen(movie3);
 			}
 		});
-		btnMovie3.setBounds(331, 102, 100, 146);
+		btnMovie3.setBounds(331, 47, 100, 146);
 		frame.getContentPane().add(btnMovie3);
 		
 		JButton btnMovie4 = new JButton(movie4.getName());
@@ -98,7 +101,7 @@ public class MovieBrowseScreen {
 				SelectedMovieScreen selMovie = new SelectedMovieScreen(movie4);
 			}
 		});
-		btnMovie4.setBounds(443, 102, 100, 146);
+		btnMovie4.setBounds(443, 47, 100, 146);
 		frame.getContentPane().add(btnMovie4);
 		
 		JButton btnBack = new JButton("<");
@@ -106,7 +109,7 @@ public class MovieBrowseScreen {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		btnBack.setBounds(6, 161, 68, 29);
+		btnBack.setBounds(6, 106, 68, 29);
 		frame.getContentPane().add(btnBack);
 		
 		JButton btnForward = new JButton(">");
@@ -114,16 +117,45 @@ public class MovieBrowseScreen {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		btnForward.setBounds(576, 161, 68, 29);
+		btnForward.setBounds(576, 106, 68, 29);
 		frame.getContentPane().add(btnForward);
 		
 		JButton btnSearch = new JButton("Search");
-		btnSearch.setBounds(501, 41, 100, 29);
+		btnSearch.setBounds(544, 6, 100, 29);
 		frame.getContentPane().add(btnSearch);
 		
 		textField = new JTextField();
-		textField.setBounds(359, 41, 130, 26);
+		textField.setBounds(403, 6, 130, 26);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
+		
+		JButton btnNewButton = new JButton("Log Out");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				LoginScreen logout = new LoginScreen();
+				logout.reappear();
+				frame.dispose();
+			}
+		});
+		btnNewButton.setBounds(6, 6, 117, 29);
+		frame.getContentPane().add(btnNewButton);
+		
+		JButton btnViewCart = new JButton("View Cart");
+		btnViewCart.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				CartScreen cartScreen = new CartScreen();
+			}
+		});
+		btnViewCart.setBounds(135, 6, 117, 29);
+		frame.getContentPane().add(btnViewCart);
+		
+		JButton btnViewWishlist = new JButton("View Wishlist");
+		btnViewWishlist.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				WishlistScreen wishlistScreen = new WishlistScreen();
+			}
+		});
+		btnViewWishlist.setBounds(264, 6, 117, 29);
+		frame.getContentPane().add(btnViewWishlist);
 	}
 }
