@@ -2,6 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 public class MovieBrowseScreen extends JPanel {
     private JFrame frame;
@@ -87,10 +89,18 @@ public class MovieBrowseScreen extends JPanel {
         // Creating search field and button
         JTextField searchField = new JTextField();
         searchField.setColumns(10);
+        searchTxt = searchField.getText();
+        searchField.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyReleased(KeyEvent e) {
+                // If 'ENTER' key is pressed then search
+                if (e.getKeyChar() == KeyEvent.VK_ENTER) {
+                }
+            }
+        });
         c.insets.left = 30;
         c.gridx = 3;
         topPanel.add(searchField, c);
-        searchTxt = searchField.getText();
         JButton searchBtn = new JButton("Search");
         c.insets.left = 0;
         c.gridx = 4;
@@ -98,6 +108,7 @@ public class MovieBrowseScreen extends JPanel {
         searchBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                // Search in movie database when button is clicked
             }
         });
 

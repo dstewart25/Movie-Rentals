@@ -1,14 +1,23 @@
+import com.sun.codemodel.internal.JOp;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
+import java.awt.event.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.*;
+import java.util.List;
 
 public class UserLogin extends JPanel{
     private JFrame frame;
     private String username, password;
     private JPasswordField passwordField;
+
+    // Map used to store user login info
+    private static Map <String, String> userInfo = new HashMap<>();
+    private List userEmail = new ArrayList();
+    private List userPass = new ArrayList();
 
     public UserLogin(JFrame frame) {
         this.frame = frame; // Setting frame equal to this frame
@@ -22,6 +31,8 @@ public class UserLogin extends JPanel{
     public void initialize() {
         frame.setTitle("Login"); // Setting frame title
 
+        importUserLoginInfo(); // Importing email and password information for login
+
         // Creating panels to hold components
         JPanel usernamePanel = new JPanel();
         usernamePanel.setLayout(new BoxLayout(usernamePanel, BoxLayout.X_AXIS));
@@ -31,7 +42,7 @@ public class UserLogin extends JPanel{
         buttonPanel.setLayout(new GridLayout(1,2));
 
         // Creating username label and text field
-        JLabel usernameLbl = new JLabel("Username:");
+        JLabel usernameLbl = new JLabel("Email:");
         usernamePanel.add(usernameLbl);
         JTextField usernameField = new JTextField();
         usernamePanel.add(usernameField);
@@ -39,8 +50,9 @@ public class UserLogin extends JPanel{
         username = usernameField.getText();
         usernameField.addKeyListener(new KeyAdapter() {
             @Override
-            public void keyReleased(KeyEvent e) {
+            public void keyPressed(KeyEvent e) {
                 if(e.getKeyChar() == KeyEvent.VK_ENTER) {
+                    // If 'ENTER' key is pressed then try to login
                     try {
                         if(passwordField.getText().equals("Pass") && usernameField.getText().equals("Admin")) {
                             // Removing user login screen and showing movie browse screen
@@ -48,6 +60,14 @@ public class UserLogin extends JPanel{
                             frame.getContentPane().add(new MovieBrowseScreen(frame));
                             frame.pack();
                             frame.getContentPane().setVisible(true);
+                        } else if (checkLogin(usernameField.getText(), passwordField.getText())) {
+                            // Removing user login screen and showing movie browse screen
+                            frame.getContentPane().removeAll();
+                            frame.getContentPane().add(new MovieBrowseScreen(frame));
+                            frame.pack();
+                            frame.getContentPane().setVisible(true);
+                        } else {
+                            return;
                         }
                     } catch (Exception loginErr) {
 
@@ -64,7 +84,7 @@ public class UserLogin extends JPanel{
         password = passwordField.getText();
         passwordField.addKeyListener(new KeyAdapter() {
             @Override
-            public void keyReleased(KeyEvent e) {
+            public void keyPressed(KeyEvent e) {
                 if(e.getKeyChar() == KeyEvent.VK_ENTER) {
                     try {
                         if(passwordField.getText().equals("Pass") && usernameField.getText().equals("Admin")) {
@@ -73,6 +93,14 @@ public class UserLogin extends JPanel{
                             frame.getContentPane().add(new MovieBrowseScreen(frame));
                             frame.pack();
                             frame.getContentPane().setVisible(true);
+                        } else if (checkLogin(usernameField.getText(), passwordField.getText())) {
+                            // Removing user login screen and showing movie browse screen
+                            frame.getContentPane().removeAll();
+                            frame.getContentPane().add(new MovieBrowseScreen(frame));
+                            frame.pack();
+                            frame.getContentPane().setVisible(true);
+                        } else {
+                            return;
                         }
                     } catch (Exception loginErr) {
 
@@ -109,6 +137,13 @@ public class UserLogin extends JPanel{
                         frame.pack();
                         frame.getContentPane().setVisible(true);
                     }
+                    if (checkLogin(usernameField.getText(), passwordField.getText())) {
+                        // Removing user login screen and showing movie browse screen
+                        frame.getContentPane().removeAll();
+                        frame.getContentPane().add(new MovieBrowseScreen(frame));
+                        frame.pack();
+                        frame.getContentPane().setVisible(true);
+                    }
                 } catch (Exception loginErr) {
 
                 }
@@ -119,5 +154,71 @@ public class UserLogin extends JPanel{
         add(usernamePanel, BorderLayout.NORTH);
         add(passwordPanel, BorderLayout.CENTER);
         add(buttonPanel, BorderLayout.SOUTH);
+    }
+
+    public void importUserLoginInfo() {
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader("Users/UserLoginInfo.txt"));
+
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] splits = line.split(": ");
+                if (splits[0].equals("Email")) {
+                    userEmail.add(splits[1]);
+                }
+                if (splits[0].equals("Password")) {
+                    userPass.add(splits[1]);
+                }
+            }
+        } catch (IOException e) {}
+        finally {
+            try {
+                reader.close();
+            } catch (IOException e) {
+            } catch (NullPointerException e) {}
+        }
+        System.out.println("Emails:    " + userEmail);
+        System.out.println("Passwords: " + userPass);
+    }
+
+    public boolean checkLogin(String email, String password) {
+        email = email.toLowerCase(); // Making the email not case sensitive
+
+        for (int i=0; i<userEmail.size(); i++) {
+            if (userEmail.get(i).equals(email)) { // If user email is one registered in the array
+                if (userPass.get(i).equals(password)) { // If password corresponds with the email
+                    return true;
+                } else if (password.isEmpty()) {
+                    // Showing no password entered dialogue
+                    JOptionPane.showMessageDialog(
+                            null,
+                            "Please enter your password.",
+                            "No Password Entered",
+                            JOptionPane.PLAIN_MESSAGE
+                    );
+                    return false;
+                } else {
+                    // Showing incorrect password dialogue
+                    JOptionPane.showMessageDialog(
+                            null,
+                            "Your password is incorrect.",
+                            "Incorrect Password",
+                            JOptionPane.PLAIN_MESSAGE
+                    );
+                    return false;
+                }
+            }
+        } // End for loop for checking emails
+
+        // Email is not registered
+        JOptionPane.showMessageDialog(
+                null,
+                "Your email is incorrect.",
+                "Email",
+                JOptionPane.PLAIN_MESSAGE
+        );
+
+        return false;
     }
 }
