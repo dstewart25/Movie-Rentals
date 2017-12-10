@@ -70,7 +70,7 @@ public class CartScreen extends JPanel {
         String[] column = new String[] {"Movie", "Price"};
         String[][] data = new String[cartMovies.length][column.length];
         for (int i=0; i<cartMovies.length; i++) {
-            data[i][0] = cartMovies[i].getName();
+            data[i][0] = cartMovies[i].getTitle();
             data[i][1] = Double.toString(cartMovies[i].getPrice());
         }
         tableModel = new DefaultTableModel(data, column);

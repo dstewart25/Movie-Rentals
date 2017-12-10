@@ -1,0 +1,39 @@
+Movie: Interstellar
+Date Released: 2014
+Director: Christopher Nolan
+Actors: Matthew McConaughey, Anne Hathaway, Jessica Chastain
+Rating: PG-13
+Genre: Adventure, Drama, Sci-Fi
+Poster URL: Posters/interstellar.jpg
+Price: 2.99
+Description: In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand (Michael Caine), a brilliant NASA physicist, is working on plans to save mankind by transporting Earth's population to a new home via a wormhole. But first, Brand must send former NASA pilot Cooper (Matthew McConaughey) and a team of researchers through the wormhole and across the galaxy to find out which of three planets could be mankind's new home.
+
+Movie: IT
+Date Released: 2017
+Director: Andres Muschietti
+Actors: Bill Skarsgard, Jaeden Lieberher, Finn Wolfhard
+Rating: R
+Genre: Horror, Thriller
+Poster URL: Posters/it.jpg
+Price: 3.99
+Description: Seven young outcasts in Derry, Maine, are about to face their worst nightmare -- an ancient, shape-shifting evil that emerges from the sewer every 27 years to prey on the town's children. Banding together over the course of one horrifying summer, the friends must overcome their own personal fears to battle the murderous, bloodthirsty clown known as Pennywise.
+
+Movie: Baby Driver
+Date Released: 2017
+Director: Edgar Wright
+Actors: Ansel Elgort, Jon Bernthal, Jon Hamm
+Rating: R
+Genre: Action, Crime, Music
+Poster URL: Posters/baby driver.jpg
+Price: 3.99
+Description: Talented getaway driver Baby (Ansel Elgort) relies on the beat of his personal soundtrack to be the best in the game. After meeting the woman (Lily James) of his dreams, he sees a chance to ditch his shady lifestyle and make a clean break. Coerced into working for a crime boss (Kevin Spacey), Baby must face the music as a doomed heist threatens his life, love and freedom.
+
+Movie: RoboCop
+Date Released: 2014
+Director: Jose Padilha
+Actors: Joshua Zetumer, Edward Neumeier
+Rating: PG-13
+Genre: Action, Crime, Sci-Fi
+Poster URL: Posters/robocop.jpg
+Price: 2.49
+Description: In 2028, OmniCorp is at the center of robot technology. While its drones have long been used by the military overseas, their use is forbidden in American law enforcement. However, OmniCorp gets a golden opportunity to crack that market when Detroit cop Alex Murphy (Joel Kinnaman) is critically injured in the line of duty. By transforming Murphy into a cyborg, OmniCorp executives hope to rake in billions for their shareholders, but they forget one thing: There's still a man inside the machine.

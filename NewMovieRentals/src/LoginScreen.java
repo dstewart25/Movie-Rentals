@@ -48,7 +48,11 @@ public class LoginScreen extends JPanel {
         forgotPasswordBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                // Removing login screen and showing forgot password screen
+                frame.getContentPane().removeAll();
+                frame.getContentPane().add(new ForgotPasswordScreen(frame));
+                frame.pack();
+                frame.getContentPane().setVisible(true);
             }
         });
 

@@ -4,21 +4,17 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class MovieBrowseScreen extends JPanel {
     private JFrame frame;
 
-    // Movie placeholders
-    private static String[] nameOfMovies = {"Predator", "RoboCop", "IT", "Interstellar"};
-    private static String[] moviePosterURL = {"MoviePosters/predator.jpg", "MoviePosters/robocop.jpg", "MoviePosters/it.jpg", "MoviePosters/interstellar.jpg"};
-    private static double[] priceOfMovies = {9.99, 10.25, 12.90, 3.99};
+    private Movie[] rentals = new Movie[100]; // Holds all of the movies from the database
+    private static int index = 0; // The index to find which movie was selected
 
-    private static Movie movie1;
-    private static Movie movie2;
-    private static Movie movie3;
-    private static Movie movie4;
-
-    private static String searchTxt;
+    private static String searchTxt; // Holds text from the search field
 
     public MovieBrowseScreen(JFrame frame) {
         this.frame = frame;
@@ -98,7 +94,7 @@ public class MovieBrowseScreen extends JPanel {
                 }
             }
         });
-        c.insets.left = 30;
+        c.insets.left = 100;
         c.gridx = 3;
         topPanel.add(searchField, c);
         JButton searchBtn = new JButton("Search");
@@ -125,8 +121,8 @@ public class MovieBrowseScreen extends JPanel {
         });
 
         // Creating movie buttons for browsing movies
-        JButton movie1Btn = new JButton(movie1.getName());
-        movie1Btn.setPreferredSize(new Dimension(100,146));
+        JButton movie1Btn = new JButton(rentals[0].getTitle());
+        movie1Btn.setPreferredSize(new Dimension(135,200));
         c.weightx = 5;
         c.gridx = 1;
         moviePanel.add(movie1Btn, c);
@@ -134,46 +130,46 @@ public class MovieBrowseScreen extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 // Removing movie browse screen and showing the selected movie screen
                 frame.getContentPane().removeAll();
-                frame.getContentPane().add(new SelectedMovieScreen(frame, movie1));
+                frame.getContentPane().add(new SelectedMovieScreen(frame, rentals[0]));
                 frame.pack();
                 frame.getContentPane().setVisible(true);
             }
         });
-        JButton movie2Btn = new JButton(movie2.getName());
-        movie2Btn.setPreferredSize(new Dimension(100,146));
+        JButton movie2Btn = new JButton(rentals[1].getTitle());
+        movie2Btn.setPreferredSize(new Dimension(135,200));
         c.gridx = 2;
         moviePanel.add(movie2Btn, c);
         movie2Btn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // Removing movie browse screen and showing the selected movie screen
                 frame.getContentPane().removeAll();
-                frame.getContentPane().add(new SelectedMovieScreen(frame, movie2));
+                frame.getContentPane().add(new SelectedMovieScreen(frame, rentals[1]));
                 frame.pack();
                 frame.getContentPane().setVisible(true);
             }
         });
-        JButton movie3Btn = new JButton(movie3.getName());
-        movie3Btn.setPreferredSize(new Dimension(100,146));
+        JButton movie3Btn = new JButton(rentals[2].getTitle());
+        movie3Btn.setPreferredSize(new Dimension(135,200));
         c.gridx = 3;
         moviePanel.add(movie3Btn, c);
         movie3Btn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // Removing movie browse screen and showing the selected movie screen
                 frame.getContentPane().removeAll();
-                frame.getContentPane().add(new SelectedMovieScreen(frame, movie3));
+                frame.getContentPane().add(new SelectedMovieScreen(frame, rentals[2]));
                 frame.pack();
                 frame.getContentPane().setVisible(true);
             }
         });
-        JButton movie4Btn = new JButton(movie4.getName());
-        movie4Btn.setPreferredSize(new Dimension(100,146));
+        JButton movie4Btn = new JButton(rentals[3].getTitle());
+        movie4Btn.setPreferredSize(new Dimension(135,200));
         c.gridx = 4;
         moviePanel.add(movie4Btn, c);
         movie4Btn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // Removing movie browse screen and showing the selected movie screen
                 frame.getContentPane().removeAll();
-                frame.getContentPane().add(new SelectedMovieScreen(frame, movie4));
+                frame.getContentPane().add(new SelectedMovieScreen(frame, rentals[3]));
                 frame.pack();
                 frame.getContentPane().setVisible(true);
             }
@@ -196,21 +192,56 @@ public class MovieBrowseScreen extends JPanel {
         add(moviePanel, BorderLayout.CENTER);
     }
 
-    // Adding selected movie to cart
-    public void addMovieToCart(Movie movie) {
-        Global.cart.addToCart(movie);
-    }
+    // Imports movie information from database
+    private void importMovies() {
+        BufferedReader reader = null;
+        try {
+            // Pointing the reader at the movie database
+            reader = new BufferedReader(new FileReader("MovieDatabase/MovieDatabase.txt"));
 
-    // Adding selected movie to wishlist
-    public void addMovieToWishlist(Movie movie) {
-        Global.wishlist.addToWishlist(movie);
-    }
+            // Reading the database line by line
+            String line;
+            int i = 0; // The index of which movie is currently being imported
+            while ((line = reader.readLine()) != null) {
+                String[] splits = line.split(": ");
 
-    // Imports movie information from database(eventually)
-    public void importMovies() {
-        movie1 = new Movie(nameOfMovies[0], moviePosterURL[0], priceOfMovies[0]);
-        movie2 = new Movie(nameOfMovies[1], moviePosterURL[1], priceOfMovies[1]);
-        movie3 = new Movie(nameOfMovies[2], moviePosterURL[2], priceOfMovies[2]);
-        movie4 = new Movie(nameOfMovies[3], moviePosterURL[3], priceOfMovies[3]);
+                if (splits[0].equals("Movie")) { // Getting movie title
+                    rentals[i] = new Movie();
+                    rentals[i].setTitle(splits[1]);
+                } else if (splits[0].equals("Date Released")) { // Getting release date
+                    rentals[i].setReleaseDate(splits[1]);
+                } else if (splits[0].equals("Director")) { // Getting director
+                    rentals[i].setDirector(splits[1]);
+                } else if (splits[0].equals("Actors")) { // Getting main actors
+                    String[] subSplits = splits[1].split(", ");
+                    for (int j=0; j<subSplits.length; j++) {
+                        rentals[i].setActors(subSplits);
+                    }
+                } else if (splits[0].equals("Rating")) { // Getting rating
+                    rentals[i].setRating(splits[1]);
+                } else if (splits[0].equals("Genre")) { // Getting genres
+                    String[] subSplits = splits[1].split(", ");
+                    for (int j=0; j<subSplits.length; j++) {
+                        rentals[i].setGenre(subSplits);
+                    }
+                } else if (splits[0].equals("Poster URL")) {
+                    rentals[i].setPosterURL(splits[1]);
+                } else if (splits[0].equals("Price")) {
+                    rentals[i].setPrice(splits[1]);
+                } else if (splits[0].equals("Description")) { // Getting description
+                    rentals[i].setDescription(splits[1]);
+
+                    // Since description is the last item imported per movie
+                    // we can increase index to next movie
+                    i++;
+                }
+            }
+        } catch (IOException e) {}
+        finally {
+            try {
+                reader.close();
+            } catch (NullPointerException e) {
+            } catch (IOException e) {}
+        }
     }
 }

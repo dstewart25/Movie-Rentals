@@ -14,8 +14,7 @@ public class UserLogin extends JPanel{
     private String username, password;
     private JPasswordField passwordField;
 
-    // Map used to store user login info
-    private static Map <String, String> userInfo = new HashMap<>();
+    // Array lists used to store user login info
     private List userEmail = new ArrayList();
     private List userPass = new ArrayList();
 
@@ -28,7 +27,7 @@ public class UserLogin extends JPanel{
     }
 
     // Fill the panel
-    public void initialize() {
+    private void initialize() {
         frame.setTitle("Login"); // Setting frame title
 
         importUserLoginInfo(); // Importing email and password information for login
@@ -156,7 +155,7 @@ public class UserLogin extends JPanel{
         add(buttonPanel, BorderLayout.SOUTH);
     }
 
-    public void importUserLoginInfo() {
+    private void importUserLoginInfo() {
         BufferedReader reader = null;
         try {
             reader = new BufferedReader(new FileReader("Users/UserLoginInfo.txt"));
@@ -182,8 +181,20 @@ public class UserLogin extends JPanel{
         System.out.println("Passwords: " + userPass);
     }
 
-    public boolean checkLogin(String email, String password) {
+    private boolean checkLogin(String email, String password) {
         email = email.toLowerCase(); // Making the email not case sensitive
+
+        // Checking if email field is empty
+        if (email.isEmpty()) {
+            // Showing no email entered dialogue
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Please enter your email.",
+                    "No Email Entered",
+                    JOptionPane.PLAIN_MESSAGE
+            );
+            return false;
+        }
 
         for (int i=0; i<userEmail.size(); i++) {
             if (userEmail.get(i).equals(email)) { // If user email is one registered in the array
@@ -209,12 +220,12 @@ public class UserLogin extends JPanel{
                     return false;
                 }
             }
-        } // End for loop for checking emails
+        } // End for loop for checking emails and passwords
 
         // Email is not registered
         JOptionPane.showMessageDialog(
                 null,
-                "Your email is incorrect.",
+                "The email entered is not registered.",
                 "Email",
                 JOptionPane.PLAIN_MESSAGE
         );

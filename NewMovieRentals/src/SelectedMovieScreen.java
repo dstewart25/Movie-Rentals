@@ -7,6 +7,8 @@ public class SelectedMovieScreen extends JPanel {
     private JFrame frame;
     private static Movie movie;
 
+    private JTextArea descriptionPane;
+
     public SelectedMovieScreen(JFrame frame, Movie selectedMovie) {
         this.frame = frame;
         movie = selectedMovie;
@@ -18,7 +20,7 @@ public class SelectedMovieScreen extends JPanel {
     // Fill the panel
     public void initialize() {
         // Setting title of frame to be the name of the selected movie
-        frame.setTitle(movie.getName());
+        frame.setTitle(movie.getTitle());
 
         // Creating sub-panels to hold components
         JPanel rightPanel = new JPanel();
@@ -27,26 +29,27 @@ public class SelectedMovieScreen extends JPanel {
         topRightPanel.setLayout(new BoxLayout(topRightPanel, BoxLayout.Y_AXIS));
         JPanel bottomRightPanel = new JPanel();
         bottomRightPanel.setLayout(new GridLayout(4,1));
-
-        // Constraints to use for formatting the panel
-        GridBagConstraints c = new GridBagConstraints();
+        JPanel moviePanel = new JPanel();
+        moviePanel.setLayout(new BorderLayout());
 
         // Creating movie poster image
         JLabel moviePoster = new JLabel();
-        moviePoster.setIcon(movie.getImage());
+        moviePoster.setIcon(movie.getSelectedMoviePoster());
         moviePoster.setBorder(BorderFactory.createEmptyBorder(0,0,0,5));
-        add(moviePoster, BorderLayout.WEST);
+        moviePanel.add(moviePoster, BorderLayout.NORTH);
+        add(moviePanel, BorderLayout.WEST);
 
         // Creating description text of the movie
-        JTextArea descriptionPane = new JTextArea();
+        descriptionPane = new JTextArea();
         descriptionPane.setEditable(false);
         descriptionPane.setLineWrap(true);
         descriptionPane.setWrapStyleWord(true);
         JScrollPane descriptionScrollPane = new JScrollPane(descriptionPane,
                 JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
                 JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-        descriptionScrollPane.setPreferredSize(new Dimension(180, 200));
+        descriptionScrollPane.setPreferredSize(new Dimension(250, 350));
         descriptionPane.setBackground(this.getBackground());
+        setDescriptionText();
         descriptionScrollPane.setBackground(this.getBackground());
         add(descriptionScrollPane, BorderLayout.CENTER);
 
@@ -65,10 +68,6 @@ public class SelectedMovieScreen extends JPanel {
             }
         });
 
-        // Creating blank label to separate buttons on the right panel
-        /*JLabel blankLbl = new JLabel();
-        rightPanel.add(blankLbl);*/
-
         // Creating add to cart button
         JButton addToCartBtn = new JButton("Add to Cart");
         addToCartBtn.setAlignmentX(CENTER_ALIGNMENT);
@@ -79,7 +78,7 @@ public class SelectedMovieScreen extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(
                         null,
-                        movie.getName() + " was added to your cart",
+                        movie.getTitle() + " was added to your cart",
                         "Movie added to cart",
                         JOptionPane.PLAIN_MESSAGE
                 );
@@ -97,7 +96,7 @@ public class SelectedMovieScreen extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(
                         null,
-                        movie.getName() + " was added to your wishlist",
+                        movie.getTitle() + " was added to your wishlist",
                         "Movie added to wishlist",
                         JOptionPane.PLAIN_MESSAGE
                 );
@@ -143,5 +142,12 @@ public class SelectedMovieScreen extends JPanel {
 
         // Adding sub-panels to the main panel
         add(rightPanel, BorderLayout.EAST);
+    }
+
+    private void setDescriptionText() {
+        descriptionPane.setText(movie.getTitle() + " (" + movie.getReleaseDate() + ")\n\n");
+        descriptionPane.append("Rating: " + movie.getRating() + "\n\n");
+        descriptionPane.append(movie.getDescription() + "\n\n");
+        descriptionPane.append("Director: " + movie.getDirector() + "\n");
     }
 }

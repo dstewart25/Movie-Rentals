@@ -26,7 +26,7 @@ public class WishlistScreen extends JPanel {
         String[] column = new String[] {"Movie"};
         String[][] data = new String[wishlistMovies.length][column.length];
         for (int i=0; i<wishlistMovies.length; i++) {
-            data[i][0] = wishlistMovies[i].getName();
+            data[i][0] = wishlistMovies[i].getTitle();
         }
         tableModel = new DefaultTableModel(data, column);
     }
