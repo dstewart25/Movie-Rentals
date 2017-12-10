@@ -16,7 +16,7 @@ public class MovieRentalsController extends JFrame {
 
         // Adding login screen to show when program begins
         getContentPane().removeAll();
-        getContentPane().add(new LoginScreen(myFrame), BorderLayout.CENTER);
+        getContentPane().add(new MovieBrowseScreen(myFrame), BorderLayout.CENTER);
         pack();
         getContentPane().setVisible(true);
     }

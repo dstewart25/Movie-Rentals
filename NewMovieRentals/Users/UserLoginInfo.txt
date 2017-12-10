@@ -1,28 +1,21 @@
-First Name: Danny
+First Name: Daniel
 Last Name: Stewart
 Age: 20
 Email: dstew89@gmail.com
-Password: pass
+Password: waffl3s89
 Security Question: Joliet
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 First Name: Mike
 Last Name: Simone
-Age: 21
+Age: 22
 Email: mikesimone95@gmail.com
 Password: password
-Security Question: Florida
+Security Question: idk
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-First Name: test
-Last Name: test
-Age: 29
-Email: test@google.com
-Password: test
-Security Question: test
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-First Name: another
-Last Name: test
-Age: 18
-Email: testing@test.com
-Password: Uppertest
+First Name: Uppercase
+Last Name: Password
+Age: 25
+Email: uppercase@test.com
+Password: UpperPass
 Security Question: test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
