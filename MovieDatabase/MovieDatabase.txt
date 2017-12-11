@@ -1,0 +1,751 @@
+Title: The Wizard of Oz
+Poster: wizard.jpg
+Price: 3.99
+Director: Victor Fleming
+Released: 1939
+Genre: Family
+Rating: G
+Actors: Judy Garland
+Description: Dorothy Gale is swept away from a farm in Kansas to a magical land of Oz in a tornado and embarks on a quest with her new friends to see the Wizard who can help her return home in Kansas and help her friends as well.
+
+Title: Pirates of the Caribbean - The Curse of the Black Pearl
+Poster: pirates.jpg
+Price: 2.99
+Director: Gore Verbinski
+Released: 2003
+Genre: Adventure
+Rating: PG-13
+Actors: Johnny Depp, Orlando Bloom
+Description: Blacksmith Will Turner teams up with eccentric pirate "Captain" Jack Sparrow to save his love, the governor's daughter, from Jack's former pirate allies, who are now undead.
+
+Title: Lord of the Rings - The Fellowship of the Ring
+Poster: lotr1.jpg
+Price: 3.99
+Director: Peter Jackson
+Released: 2001
+Genre: Adventure
+Rating: PG-13
+Actors: Viggo Mortenson
+Description: A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle Earth from the Dark Lord Sauron.
+
+Title: Lord of the Rings - The Two Towers
+Poster: lotr2.jpg
+Price: 3.99
+Director: Peter Jackson
+Released: 2002
+Genre: Adventure
+Rating: PG-13
+Actors: Viggo Mortenson
+Description: While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.
+
+Title: Lord of the Rings - The Return of the King
+Poster: lotr3.jpg
+Price: 3.99
+Director: Peter Jackson
+Released: 2003
+Genre: Adventure
+Rating: PG-13
+Actors: Viggo Mortenson
+Description: Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.
+
+Title: Beauty and the Beast
+Poster: beautyandthebeast2.jpg
+Price: 3.99
+Director: Bill Condon
+Released: 2017
+Genre: Romance
+Rating: PG
+Actors: Dan Stevens, Emma Watson
+Description: An adaptation of the fairy tale about a monstrous-looking prince and a young woman who fall in love.
+
+Title: Beauty and the Beast
+Poster: beautyandthebeast.jpg
+Price: 3.99
+Director: Gary Trousdale
+Released: 1991
+Genre: Animated
+Rating: G
+Actors: Paige O'Hara
+Description: A young woman whose father has been imprisoned by a terrifying beast offers herself in his place, unaware that her captor is actually a prince, physically altered by a magic spell.
+
+Title: Snow White and the Seven Dwarves
+Poster: snowwhite.jpg
+Price: 3.99
+Director: William Cottrell 
+Released: 1939
+Genre: Animated
+Rating: G
+Actors: Adriana Caselotti
+Description: Exiled into the dangerous forest by her wicked stepmother, a princess is rescued by seven dwarf miners who make her part of their household.
+
+Title: Finding Nemo
+Poster: nemo.jpg
+Price: 3.99
+Director: Andrew Stanton
+Released: 2003
+Genre: Animated
+Rating: G
+Actors: Ellen Degeneres
+Description: After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.
+
+Title: Cinderella Man
+Poster: cinderellaman.jpg
+Price: 3.99
+Director: Ron Howard
+Released: 2005
+Genre: Sports
+Rating: PG-13
+Actors: Russell Crowe
+Description: The story of James Braddock, a supposedly washed-up boxer who came back to become a champion and an inspiration in the 1930s.
+
+Title: Remember the Titans
+Poster: rememberthetitans.jpg
+Price: 3.99
+Director: Boaz Yakin
+Released: 2000
+Genre: Sports
+Rating: PG
+Actors: Denzel Washington
+Description: The true story of a newly appointed African-American coach and his high school team on their first season as a racially integrated unit.
+
+Title: Toy Story
+Poster: toystory.jpg
+Price: 3.99
+Director: John Lasseter
+Released: 1995
+Genre: Animated
+Rating: G
+Actors: Tim Allen, Tom Hanks
+Description: A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.
+
+Title: The Birds
+Poster: birds.jpg
+Price: 4.99
+Director: Alfred Hitchcock
+Released: 1963
+Genre: Horror
+Rating: PG-13
+Actors: Tippi Hedron
+Description: A wealthy San Francisco socialite pursues a potential boyfriend to a small Northern California town that slowly takes a turn for the bizarre when birds of all kinds suddenly begin to attack people.
+
+Title: 10 Things I Hate About You
+Poster: tenthings.jpg
+Price: 4.99
+Director: Gil Junger
+Released: 1999
+Genre: Romance
+Rating: PG-13
+Actors: Heath Ledger
+Description: A pretty, popular teenager can't go out on a date until her ill-tempered older sister does.
+
+Title: Thor
+Poster: thor.jpg
+Price: 4.99
+Director: Kenneth Branagh
+Released: 2011
+Genre: Adventure
+Rating: PG-13
+Actors: Chris Hemsworth
+Description: The powerful, but arrogant god Thor, is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes one of their finest defenders.
+
+Title: The Big Lebowski
+Poster: biglebowski.jpg
+Price: 3.99
+Director: Joel Coen
+Released: 1998
+Genre: Comedy
+Rating: R
+Actors: Jeff Bridges
+Description: "The Dude" Lebowski, mistaken for a millionaire Lebowski, seeks restitution for his ruined rug and enlists his bowling buddies to help get it.
+
+Title: Fargo
+Poster: fargo.jpg
+Price: 3.99
+Director: Joel Coen
+Released: 1996
+Genre: Drama
+Rating: R
+Actors: William H Macy
+Description: Jerry Lundegaard's inept crime falls apart due to his and his henchmen's bungling and the persistent police work of the quite pregnant Marge Gunderson.
+
+Title: Stand By Me
+Poster: standbyme.jpg
+Price: 3.99
+Director: Rob Reiner
+Released: 1986
+Genre: Drama
+Rating: R
+Actors: River Phoenix
+Description: After the death of a friend, a writer recounts a boyhood journey to find the body of a missing boy.
+
+Title: Love Actually
+Poster: loveactually.jpg
+Price: 3.99
+Director: Richard Curtis
+Released: 2003
+Genre: Romance
+Rating: R
+Actors: Hugh Grant, Liam Neeson
+Description: Follows the lives of eight very different couples in dealing with their love lives in various loosely interrelated tales all set during a frantic month before Christmas in London, England.
+
+Title: Raiders of the Lost Ark
+Poster: raiders.jpg
+Price: 3.99
+Director: Steven Spielberg
+Released: 1981
+Genre: Adventure
+Rating: PG
+Actors: Harrison Ford
+Description: Archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant before the Nazis.
+
+Title: Witness
+Poster: witness.jpg
+Price: 3.99
+Director: Peter Weir
+Released: 1985
+Genre: Drama
+Rating: R
+Actors: Harrison Ford
+Description: A young Amish boy is sole witness to a murder; policeman John Book goes into hiding in Amish country to protect him until the trial.
+
+Title: King Kong
+Poster: kingkong.jpg
+Price: 1.99
+Director: Merian Cooper
+Released: 1933
+Genre: Horror
+Rating: PG
+Actors: Fan Wray
+Description: A film crew goes to a tropical island for an exotic location shoot and discovers a colossal ape who takes a shine to their female blonde star. He is then captured and brought back to New York City for public exhibition.
+
+Title: Batman Begins
+Poster: batman.jpg
+Price: 1.99
+Director: Christoper Nolan
+Released: 2005
+Genre: Adventure
+Rating: PG-13
+Actors: Christian Bale
+Description: After training with his mentor, Batman begins his fight to free crime-ridden Gotham City from the corruption that Scarecrow and the League of Shadows have cast upon it.
+
+Title: The Dark Knight
+Poster: darkknight.jpg
+Price: 3.99
+Director: Christoper Nolan
+Released: 2008
+Genre: Adventure
+Rating: PG-13
+Actors: Christian Bale, Heath Ledger
+Description: When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham, the Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice.
+
+Title: The Dark Knight Rises
+Poster: darkknightrises.jpg
+Price: 3.99
+Director: Christoper Nolan
+Released: 2012
+Genre: Adventure
+Rating: PG-13
+Actors: Christian Bale
+Description: Eight years after the Joker's reign of anarchy, the Dark Knight, with the help of the enigmatic Catwoman, is forced from his exile to save Gotham City, now on the edge of total annihilation, from the brutal guerrilla terrorist Bane.
+
+Title: Willy Wonka and the Chocolate Factory
+Poster: willywonka.jpg
+Price: 3.99
+Director: Mel Stuart
+Released: 1971
+Genre: Family
+Rating: G
+Actors: Gene Wilder
+Description: Charlie receives a golden ticket to a factory, his sweet tooth wants going into the lushing candy, it turns out there's an adventure in everything.
+
+Title: Casablanca
+Poster: casablanca.jpg
+Price: 3.99
+Director: Michael Curtiz
+Released: 1942
+Genre: Romance
+Rating: PG
+Actors: Ingrid Bergman
+Description: In Casablanca in December 1941, a cynical American expatriate encounters a former lover, with unforeseen complications.
+
+Title: Twister
+Poster: twister.jpg
+Price: 3.99
+Director: Jan de Bont
+Released: 1996
+Genre: Disaster
+Rating: PG-13
+Actors: Bill Paxton
+Description: Bill and Jo Harding, advanced storm chasers on the brink of divorce, must join together to create an advanced weather alert system by putting themselves in the cross-hairs of extremely violent tornadoes.
+
+Title: The Poseidon Adventure
+Poster: poseiden.jpg
+Price: 3.99
+Director: Ronald Neame
+Released: 1972
+Genre: Disaster
+Rating: PG
+Actors: Gene Hackman
+Description: A group of passengers struggle to survive and escape when their ocean liner completely capsizes at sea.
+
+Title: When Harry Met Sally
+Poster: harrysally.jpg
+Price: 3.99
+Director: Rob Reiner
+Released: 1989
+Genre: Romance
+Rating: R
+Actors: Meg Ryan
+Description: Harry and Sally have known each other for years, and are very good friends, but they fear sex would ruin the friendship.
+
+Title: Signs
+Poster: signs.jpg
+Price: 3.99
+Director: M Night Shyamalan
+Released: 2002
+Genre: Horror
+Rating: PG-13
+Actors: Mel Gibson
+Description: A family living on a farm finds mysterious crop circles in their fields which suggests something more frightening to come.
+
+Title: The Sixth Sense
+Poster: sixthsense.jpg
+Price: 3.99
+Director: M Night Shyamalan
+Released: 1999
+Genre: Horror
+Rating: PG-13
+Actors: Bruce Willis
+Description: A boy who communicates with spirits that don't know they're dead seeks the help of a disheartened child psychologist.
+
+Title: Billy Madison
+Poster: billymadison.jpg
+Price: 3.99
+Director: Tamra Davis
+Released: 1995
+Genre: Comedy
+Rating: PG-13
+Actors: Adam Sandler
+Description: In order to inherit his fed up father's hotel empire, an immature and lazy man must repeat grades 1-12 all over again.
+
+Title: Anchorman
+Poster: anchorman.jpg
+Price: 3.99
+Director: Adam McKay
+Released: 2004
+Genre: Comedy
+Rating: PG-13
+Actors: Will Ferrell
+Description: Ron Burgundy is San Diego's top-rated newsman in the male-dominated broadcasting of the 1970s, but that's all about to change for Ron and his cronies when an ambitious woman is hired as a new anchor.
+
+Title: Stepbrothers
+Poster: stepbrothers.jpg
+Price: 3.99
+Director: Adam McKay
+Released: 2008
+Genre: Comedy
+Rating: R
+Actors: Will Ferrell
+Description: Two aimless middle-aged losers still living at home are forced against their will to become roommates when their parents marry.
+
+Title: Cool Runnings
+Poster: coolrunnings.jpg
+Price: 3.99
+Director: Jon Turteltaub
+Released: 1993
+Genre: Sports
+Rating: PG
+Actors: Leon, Doug E Doug
+Description: When a Jamaican sprinter is disqualified from the Olympic Games, he enlists the help of a dishonored coach to start the first Jamaican Bobsled Team.
+
+Title: Field of Dreams
+Poster: fieldofdreams.jpg
+Price: 3.99
+Director: Phil Alden Robinson
+Released: 1989
+Genre: Sports
+Rating: PG
+Actors: Kevin Costner
+Description: An Iowa corn farmer, hearing voices, interprets them as a command to build a baseball diamond in his fields; he does, and the 1919 Chicago White Sox come.
+
+Title: Hocus Pocus
+Poster: hocuspocus.jpg
+Price: 3.99
+Director: Kenny Ortega
+Released: 1993
+Genre: Family
+Rating: PG
+Actors: Bette Midler
+Description: After three centuries, three witch sisters are resurrected in Salem, Massachusetts on Halloween night, and it is up to two teenagers, a young girl, and an immortal cat to put an end to their reign of terror once and for all.
+
+Title: The Notebook
+Poster: notebook.jpg
+Price: 3.99
+Director: Nick Cassavetes
+Released: 2004
+Genre: Romance
+Rating: PG-13
+Actors: Rachel McAdams
+Description: A poor yet passionate young man falls in love with a rich young woman, giving her a sense of freedom, but they are soon separated because of their social differences.
+
+Title: Who Framed Rodger Rabbit?
+Poster: rodgerrabbit.jpg
+Price: 3.99
+Director: Robert Zemeckis
+Released: 1988
+Genre: Adventure
+Rating: PG
+Actors: Bob Hoskins
+Description: A toon-hating detective is a cartoon rabbit's only hope to prove his innocence when he is accused of murder.
+
+Title: Tarzan
+Poster: tarzan.jpg
+Price: 3.99
+Director: Chris Buck
+Released: 1999
+Genre: Animated
+Rating: G
+Actors: Minnie Driver
+Description: A man raised by gorillas must decide where he really belongs when he discovers he is a human.
+
+Title: Jurassic Park
+Poster: jurassicpark.jpg
+Price: 3.99
+Director: Steven Spielberg
+Released: 1993
+Genre: Adventure
+Rating: PG-13
+Actors: Sam Neill, Laura Dern
+Description: During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok.
+
+Title: Jurassic World
+Poster: jurassicworld.jpg
+Price: 3.99
+Director: Colin Trevorrow
+Released: 2015
+Genre: Adventure
+Rating: 2015
+Actors: Chris Pratt
+Description: A new theme park, built on the original site of Jurassic Park, creates a genetically modified hybrid dinosaur, which escapes containment and goes on a killing spree.
+
+Title: Titanic
+Poster: titanic.jpg
+Price: 3.99
+Director: James Cameron
+Released: 1997
+Genre: Drama
+Rating: PG-13
+Actors: Kate Winslet, Leonardo DiCaprio
+Description: A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.
+
+Title: The Parent Trap
+Poster: parenttrap.jpg
+Price: 3.99
+Director: Nancy Meyers
+Released: 1998
+Genre: Family
+Rating: PG
+Actors: Lindsay Lohan
+Description: Identical twins Annie and Hallie, separated at birth and each raised by one of their biological parents, later discover each other for the first time at summer camp and make a plan to bring their wayward parents back together.
+
+Title: Sister Act
+Poster: sisteract.jpg
+Price: 3.99
+Director: Emile Ardolino
+Released: 1992
+Genre: Family
+Rating: PG
+Actors: Whoopi Goldberg
+Description: When a worldly singer witnesses a mob crime, the police hide her as a nun in a traditional convent where she has trouble fitting in.
+
+Title: Cinderella
+Poster: cinderella.jpg
+Price: 3.99
+Director: Kenneth Branagh
+Released: 2015
+Genre: Animated
+Rating: PG
+Actors: Ilene Woods
+Description: When Cinderella's cruel stepmother prevents her from attending the Royal Ball, she gets some unexpected help from the lovable mice Gus and Jaq, and from her Fairy Godmother.
+
+Title: Space Jam
+Poster: spacejam.jpg
+Price: 3.99
+Director: Joe Pytka
+Released: 1996
+Genre: Sports
+Rating: PG
+Actors: Michael Jordan
+Description: In a desperate attempt to win a basketball match and earn their freedom, the Looney Tunes seek the aid of retired basketball champion, Michael Jordan.
+
+Title: Friday the 13th
+Poster: friday.jpg
+Price: 3.99
+Director: Sean S Cunningham
+Released: 1980
+Genre: Horror
+Rating: R
+Actors: Betsy Palmer, Adrienne King
+Description: A group of camp counselors are stalked and murdered by an unknown assailant while trying to reopen a summer camp which, years before, was the site of a child's drowning.
+
+Title: The Pink Panther
+Poster: pinkpanther.jpg
+Price: 3.99
+Director: Blake Edwards
+Released: 1963
+Genre: Comedy
+Rating: PG
+Actors: Peter Sellers
+Description: Inspector Clouseau travels to Rome to catch a notorious jewel thief known as "The Phantom" before he conducts his most daring heist yet--a princess' priceless diamond with one slight imperfection, known as "The Pink Panther."
+
+Title: The Jungle Book
+Poster: junglebook.jpg
+Price: 3.99
+Director: Larry Clemons
+Released: 1967
+Genre: Animated
+Rating: G
+Actors: Phil Harris
+Description: Bagheera the Panther and Baloo the Bear have a difficult time trying to convince a boy to leave the jungle for human civilization.
+
+Title: A Christmas Story
+Poster: christmasstory.jpg
+Price: 3.99
+Director: Bob Clark
+Released: 1983
+Genre: Family
+Rating: PG
+Actors: Peter Billingsley 
+Description: In the 1940s, a young boy named Ralphie attempts to convince his parents, his teacher, and Santa that a Red Ryder B.B. gun really is the perfect Christmas gift.
+
+Title: Rocky
+Poster: rocky.jpg
+Price: 3.99
+Director: John G Avildsen
+Released: 1976
+Genre: Sports
+Rating: PG
+Actors: Sylvestor Stallone
+Description: Rocky Balboa, a small-time boxer, gets a supremely rare chance to fight heavy-weight champion Apollo Creed in a bout in which he strives to go the distance for his self-respect.
+
+Title: Dirty Dancing
+Poster: dancing.jpg
+Price: 3.99
+Director: Emile Ardolino
+Released: 1987
+Genre: Romance
+Rating: PG-13
+Actors: Patrick Swayze
+Description: Spending the summer at a Catskills resort with her family, Frances "Baby" Houseman falls in love with the camp's dance instructor, Johnny Castle.
+
+Title: The Outsiders
+Poster: outsiders.jpg
+Price: 3.99
+Director: Francis Ford Coppola
+Released: 1983
+Genre: Drama
+Rating: PG-13
+Actors: Matt Dillon
+Description: The rivalry between two gangs, the poor Greasers and the rich Socs, only heats up when one gang member kills a member of the other.
+
+Title: The Godfather
+Poster: godfather.jpg
+Price: 3.99
+Director: Francis Ford Coppola
+Released: 1972
+Genre: Drama
+Rating: R
+Actors: Marlon Brando
+Description: The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.
+
+Title: Boyhood
+Poster: boyhood.jpg
+Price: 4.99
+Director: Richard Linklater
+Released: 2014
+Genre: Drama
+Rating: R
+Actors: Patricia Arquette
+Description: The life of Mason, from early childhood to his arrival at college.
+
+Title: 12 Angry Men
+Poster: angrymen.jpg
+Price: 1.99
+Director: Sidney Lumet
+Released: 1957
+Genre: Drama
+Rating: PG
+Actors: Henry Fonda
+Description: A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.
+
+Title: Grease
+Poster: grease.jpg
+Price: 3.99
+Director: Randal Kleiser
+Released: 1978
+Genre: Romance
+Rating: PG-13
+Actors: John Travolta
+Description: Good girl Sandy and greaser Danny fell in love over the summer. When they unexpectedly discover they're now in the same high school, will they be able to rekindle their romance?
+
+Title: Annie Hall
+Poster: anniehall.jpg
+Price: 3.99
+Director: Woody Allen
+Released: 1977
+Genre: Romance
+Rating: PG
+Actors: Diane Keaton
+Description: Neurotic New York comedian Alvy Singer falls in love with the ditzy Annie Hall.
+
+Title: 500 Days of Summer
+Poster: summer.jpg
+Price: 3.99
+Director: Marc Webb
+Released: 2009
+Genre: Romance
+Rating: PG-13
+Actors: Zooey Deschanel, Joseph Gordon Levitt
+Description: An offbeat romantic comedy about a woman who doesn't believe true love exists, and the young man who falls for her.
+
+Title: The Exorcist
+Poster: exorcist.jpg
+Price: 3.99
+Director: William Friedkin
+Released: 1973
+Genre: Horror
+Rating: R
+Actors: Max von Sydow, Ellen Burstyn
+Description: When a girl is possessed by a mysterious entity, her mother seeks the help of two priests to save her daughter.
+
+Title: Scream 
+Poster: scream.jpg
+Price: 3.99
+Director: Wes Craven
+Released: 1996
+Genre: Horror
+Rating: R
+Actors: Neve Campbell
+Description: A year after the murder of her mother, a teenage girl is terrorized by a new killer, who targets the girl and her friends by using horror films as part of a deadly game.
+
+Title: Freaky Friday
+Poster: freakyfriday.jpg
+Price: 1.99
+Director: Gary Nelson
+Released: 1976
+Genre: Family
+Rating: G
+Actors: Jodie Foster
+Description: A mother and daughter find their personalities switched and have to live each other's lives on one strange Friday.
+
+Title: The Truman Show
+Poster: trumanshow.jpg
+Price: 3.99
+Director: Peter Weir
+Released: 1998
+Genre: Drama
+Rating: PG
+Actors: Jim Carrey
+Description: An insurance salesman/adjuster discovers his entire life is actually a television show.
+
+Title: Alien
+Poster: alien.jpg
+Price: 3.99
+Director: Ridley Scott
+Released: 1979
+Genre: Horror
+Rating: R
+Actors: Sigourney Weaver
+Description: After a space merchant vessel perceives an unknown transmission as a distress call, its landing on the source moon finds one of the crew attacked by a mysterious lifeform, and they soon realize that its life cycle has merely begun.
+
+Title: Poltergeist
+Poster: poltergeist.jpg
+Price: 5.99
+Director: Tobe Hooper
+Released: 1982
+Genre: Horror
+Rating: PG
+Actors: JoBeth Williams, Craig T Nelson
+Description: A family's home is haunted by a host of ghosts.
+
+Title: The Empire Strikes Back
+Poster: empire.jpg
+Price: 2.99
+Director: Irvin Kershner
+Released: 1980
+Genre: Adventure
+Rating: PG
+Actors: Mark Hamill, Carrie Fisher
+Description: After the rebels are overpowered by the Empire on their newly established base, Luke Skywalker begins Jedi training with Yoda. His friends accept shelter from a questionable ally as Darth Vader hunts them in a plan to capture Luke.
+
+Title: Star Wars
+Poster: starwars.jpg
+Price: 2.99
+Director: George Lucas
+Released: 1977
+Genre: Adventure
+Rating: PG
+Actors: Mark Hamill, Carrie Fisher
+Description: Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle-station while also attempting to rescue Princess Leia from the evil Darth Vader.
+
+Title: My Best Friend's Wedding
+Poster: bestfriend.jpg
+Price: 1.99
+Director: PJ Hogan
+Released: 1997
+Genre: Romance
+Rating: PG-13
+Actors: Julia Roberts
+Description: When a woman's long-time friend reveals he's engaged, she realizes she loves him herself and sets out to get him, with only days before the wedding.
+
+Title: Nightmare Before Christmas
+Poster: nightmare.jpg
+Price: 2.99
+Director: Henry Selick
+Released: 1993
+Genre: Animated
+Rating: PG
+Actors: Danny Elfman
+Description: Jack Skellington, king of Halloween Town, discovers Christmas Town, but his attempts to bring Christmas to his home cause confusion.
+
+Title: Hook
+Poster: hook.jpg
+Price: 3.99
+Director: Steven Spielberg
+Released: 1991
+Genre: Adventure
+Rating: PG
+Actors: Robin Williams
+Description: When Captain Hook kidnaps his children, an adult Peter Pan must return to Neverland and reclaim his youthful spirit in order to challenge his old enemy.
+
+Title: Mrs. Doubtfire
+Poster: mrsdoubtfire.jpg
+Price: 2.99
+Director: Chris Columbus
+Released: 1993
+Genre: Family
+Rating: PG-13
+Actors: Robin Williams
+Description: After a bitter divorce, an actor disguises himself as a female housekeeper to spend time with his children held in custody by his former wife.
+
+Title: Flubber
+Poster: flubber.jpg
+Price: 3.99
+Director: Les Mayfield
+Released: 1997
+Poster: flubber.jpg
+Genre: Family
+Rating: PG
+Actors: Robin Williams
+Description: An absent-minded professor discovers "flubber", a rubber-like super-bouncy substance.
+
+Title: Sleeping Beauty
+Poster: sleepingbeauty.jpg
+Price: 5.99
+Director: Clyde Geronimi
+Released: 1959
+Genre: Animated
+Rating: G
+Actors: Mary Costa
+Description: After being snubbed by the royal family, a malevolent fairy places a curse on a princess which only a prince can break, along with the help of three good fairies.
+
