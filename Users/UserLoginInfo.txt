@@ -1,0 +1,42 @@
+First Name: Daniel
+Last Name: Stewart
+Age: 20
+Email: dstew89@gmail.com
+Password: waffl3s89
+Security Question: Joliet
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+First Name: Mike
+Last Name: Simone
+Age: 22
+Email: mikesimone95@gmail.com
+Password: password
+Security Question: idk
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+First Name: Uppercase
+Last Name: Password
+Age: 25
+Email: uppercase@test.com
+Password: UpperPass
+Security Question: test
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+First Name: fuck
+Last Name: you
+Age: 20
+Email: test@test.com
+Password: pass
+Security Question: ft myers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+First Name: Jenn
+Last Name: Cole
+Age: 28
+Email: jenn.renee.cole@gmail.com
+Password: hey
+Security Question: Tampa
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+First Name: Daniel
+Last Name: Stewart
+Age: 20
+Email: dstew90@hotmail.com
+Password: password
+Security Question: Joliet
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
